@@ -2,6 +2,7 @@
 @import "global";
 @import "global";
 @import "fonts";
+// start header
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -48,6 +49,9 @@
     }
   }
 }
+// end header
+
+// start Search
 
 .search {
   background-size: cover;
@@ -69,10 +73,11 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    margin-bottom: 50px;
   }
   &-form {
     max-width: 670px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     position: relative;
     & input {
       display: block;
@@ -104,3 +109,137 @@
     }
   }
 }
+
+// =======END SEARCH====
+
+// =======Start Products====
+.products {
+  padding: 100px 0 110px;
+  background-color: $grey;
+}
+.products__inner-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products__inner-btn {
+  text-align: center;
+  margin-bottom: 60px;
+  button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 12px 21px;
+    background-color: #fff;
+    border: none;
+    color: $bg;
+
+    & + button {
+      margin-left: 5px;
+    }
+    &.mixitup-control-active {
+      background-color: $red;
+      transition: all 0.5s;
+      color: #fff;
+    }
+  }
+}
+.product__item {
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  max-width: 442px;
+  width: 100%;
+  margin-bottom: 30px;
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 90px;
+    font-weight: 500;
+    border-bottom: solid 1px #e7ecf2;
+  }
+  &-name {
+    display: block;
+    max-width: 310px;
+  }
+  &-title {
+    display: block;
+    color: $bg;
+    font-size: 18px;
+  }
+  &-category {
+    font-size: 14px;
+    color: $green;
+    display: block;
+  }
+  &-price {
+    font-size: 20px;
+    color: $bg;
+    font-weight: 700;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 30px;
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      margin-right: 14px;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  // ===вариант центровки который я глянул у одного пользователя==
+  // &-author {
+  //   span {
+  //     width: 30px;
+  //     height: 30px;
+  //     border-radius: 50%;
+  //     background-position: center;
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //     display: inline-block;
+  //     vertical-align: middle;
+  //   }
+  //   font-size: 14px;
+  //   font-weight: 500;
+  // }
+}
+.products__bottom-btn {
+  text-align: center;
+  button {
+    margin: 45px 5px 0 5px;
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    background-color: #ffffff;
+    color: $bg;
+    padding: 20px 30px;
+    cursor: pointer;
+    &.mixitup-control-active {
+      background-color: $red;
+      transition: all 0.5s;
+      color: #fff;
+    }
+  }
+}
+
+//======END PRODUCTS====
