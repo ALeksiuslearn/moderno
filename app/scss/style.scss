@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+
 // start header
 .header__top-inner {
   display: flex;
@@ -8,13 +9,16 @@
   height: 90px;
   align-items: center;
 }
+
 .header__text {
   margin-left: auto;
   margin-right: 50px;
+
   span {
     color: $red;
   }
 }
+
 .header__btn {
   font-size: 12px;
   padding: 4px;
@@ -22,32 +26,40 @@
   border-radius: 4px;
   text-align: center;
   color: #fff;
+
   &-login {
     background-color: $green;
   }
+
   &-register {
     background-color: $red;
     margin-left: 7px;
   }
 }
+
 .header__menu {
   background-color: $bg;
 }
+
 .menu {
   display: flex;
   align-items: center;
   height: 60px;
+
   &__list li {
     display: inline-block;
+
     & + li {
       margin-left: 30px;
     }
+
     a {
       font-size: 14px;
       color: #fff;
     }
   }
 }
+
 // end header
 
 // start Search
@@ -58,26 +70,31 @@
   background-position: center;
   min-height: 533px;
 }
+
 .search__inner {
   padding: 135px 0 100px;
   color: #ffffff;
   text-align: center;
+
   &-title {
     font-size: 48px;
     line-height: 72px;
     margin-bottom: 10px;
-    font-weight: 700;
+    @include f700;
   }
+
   &-text {
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     line-height: 30px;
     margin-bottom: 50px;
   }
+
   &-form {
     max-width: 670px;
     margin: 0 auto 50px auto;
     position: relative;
+
     & input {
       display: block;
       width: 100%;
@@ -86,8 +103,9 @@
       height: 56px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       padding: 0 25px 0 60px;
+
       &:focus {
         border: 1px solid #000;
       }
@@ -95,10 +113,11 @@
       &::placeholder {
         color: #90a4ae;
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
       }
     }
+
     button {
       position: absolute;
       border: none;
@@ -116,14 +135,17 @@
   padding: 100px 0 110px;
   background-color: $grey;
 }
+
 .products__inner-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .products__inner-btn {
   text-align: center;
   margin-bottom: 60px;
+
   button {
     cursor: pointer;
     font-size: 14px;
@@ -135,6 +157,7 @@
     & + button {
       margin-left: 5px;
     }
+
     &.mixitup-control-active {
       background-color: $red;
       transition: all 0.5s;
@@ -148,6 +171,7 @@
   max-width: 442px;
   width: 100%;
   margin-bottom: 30px;
+
   &-img {
     min-height: 250px;
     background-repeat: no-repeat;
@@ -155,34 +179,40 @@
     background-position: center;
     background-size: cover;
   }
+
   &-content {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: solid 1px #e7ecf2;
   }
+
   &-name {
     display: block;
     max-width: 310px;
   }
+
   &-title {
     display: block;
     color: $bg;
     font-size: 18px;
   }
+
   &-category {
     font-size: 14px;
     color: $green;
     display: block;
   }
+
   &-price {
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
   }
+
   &-info {
     display: flex;
     justify-content: space-between;
@@ -190,10 +220,12 @@
     min-height: 70px;
     padding: 10px 30px;
   }
+
   &-author {
     display: flex;
     align-items: center;
     max-width: 250px;
+
     .avatar {
       width: 30px;
       height: 30px;
@@ -204,11 +236,13 @@
       display: inline-block;
       margin-right: 14px;
     }
+
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
+
   // ===вариант центровки который я глянул у одного пользователя==
   // &-author {
   //   span {
@@ -222,17 +256,20 @@
   //     vertical-align: middle;
   //   }
   //   font-size: 14px;
-  //   font-weight: 500;
+  //  @include f500;
   // }
   &-star {
     font-size: 12px;
+
     span {
       color: $bg;
     }
   }
 }
+
 .products__bottom-btn {
   text-align: center;
+
   button {
     margin: 45px 5px 0 5px;
     border: none;
@@ -241,6 +278,7 @@
     color: $bg;
     padding: 20px 30px;
     cursor: pointer;
+
     &.mixitup-control-active {
       background-color: $red;
       transition: all 0.5s;
@@ -258,8 +296,10 @@
   .slick-dots {
     margin-top: 50px;
     text-align: center;
+
     li {
       display: inline-block;
+
       & + li {
         margin-left: 7px;
       }
@@ -275,6 +315,7 @@
         border-radius: 50%;
         background-color: #e8e8e8;
       }
+
       &.slick-active {
         button {
           background-color: $green;
@@ -283,4 +324,291 @@
     }
   }
 }
+
 //  ================END Product-slider
+// ===============advantages START==========
+.advantages {
+  background-color: $bg;
+  padding: 110px 0;
+}
+
+.advantages__title {
+  color: #fff;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 15px 15px;
+  border: 1px solid transparent;
+
+  &-img {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 24px;
+    @include f500;
+  }
+
+  &:hover {
+    .advantages__item-img {
+      background-color: $green;
+      transition: all 0.8s;
+      svg {
+        fill: $red;
+        stroke: #fff;
+      }
+    }
+
+    .advantages__item-title {
+      color: magenta;
+      transition: all 1.5s;
+    }
+    .advantages__item-text {
+      color: #fff;
+      transition: all 2s;
+    }
+  }
+}
+.advantages__item:hover {
+  box-shadow: #fdfafa14;
+  border: 1px solid #fff;
+  border-radius: 5%;
+  transition: all 0.5s;
+}
+
+// ===============advantages END==========
+// ================author Start===========
+.author {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 40px;
+    max-width: 270px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    background-color: #fff;
+    padding: 14px 40px;
+    color: $bg;
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+// ================author END===========
+// ================tutorial START===========
+.tutorial {
+  padding: 70px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+.tutorial__item {
+  &-images {
+    display: block;
+    max-width: 370px;
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-title {
+    display: block;
+    color: $bg;
+    font-size: 24px;
+    position: absolute;
+    @include f700;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 30px 10px;
+  }
+}
+// ================tutorial END===========
+// ================FOOTER START===========
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &-menu {
+    max-width: 220px;
+    width: 100%;
+  }
+  &-title {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      bottom: 0;
+      background-color: $green;
+    }
+  }
+  &-text {
+    color: #b7c3c8;
+  }
+}
+.footer__copy {
+  border-top: 1px solid #424d53;
+}
+.footer__copy-text {
+  text-align: center;
+  color: #919699;
+  padding: 25px 0;
+}
+.footer__info {
+  margin-top: 18px;
+  color: #ffffff;
+  @include f500;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "\f041";
+    font-family: "icomoon";
+    color: $green;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+  }
+}
+.footer__info-phone {
+  &::before {
+    content: "\f095";
+  }
+}
+.footer__col-list {
+  a {
+    color: #b7c3c8;
+    margin-bottom: 15px;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: "\f105";
+      position: absolute;
+      font-size: 18px;
+      left: 0;
+      font-family: "icomoon";
+      color: $green;
+    }
+  }
+}
+.footer__social-link {
+  margin-bottom: 33px;
+  a {
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/css_sprites.png);
+  }
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
+  }
+}
+
+.link-twitter {
+  background: url("css_sprites.png") -28px -0;
+}
+.link-youtube {
+  background: url("css_sprites.png") -56px -0;
+}
+.link-pinterest {
+  background: url("css_sprites.png") -84px -0;
+}
+.link-linledin {
+  background: url("css_sprites.png") -112px -0;
+}
+.footer__form-title {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+form {
+  position: relative;
+  input {
+    display: block;
+    width: 100%;
+    background-color: #2f3c43;
+    border: none;
+    height: 40px;
+    padding-left: 13px;
+    padding-right: 50px;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    height: 40px;
+    width: 43px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $green;
+    border: none;
+    &::before {
+      content: "\f124";
+      font-family: "icomoon";
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+
+// ================FOOTER END===========
