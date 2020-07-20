@@ -33,6 +33,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-paragraph-center:before {
+  content: "\ea78";
+}
 .icon-search:before {
   content: "\f002";
 }
