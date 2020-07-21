@@ -326,7 +326,109 @@
     }
   }
 }
-
+// ===================================LOGIN POPUP===================START=====
+#modal {
+  background-color: $green;
+  /* Style for "Rectangle" */
+  max-width: 730px;
+  min-height: 490px;
+  background-color: #8bc34a;
+  padding-bottom: 90px;
+  padding-top: 100px;
+}
+.login__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  @include f700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    input {
+      height: 43px;
+      background-color: #76ae36;
+      margin-bottom: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 40px;
+      display: block;
+      width: 100%;
+      &::placeholder {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .login__label {
+      position: relative;
+      display: block;
+      width: 100%;
+      &::before {
+        position: absolute;
+        font-family: "icomoon";
+        width: 14px;
+        height: 14px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        left: 18px;
+        top: 9px;
+      }
+    }
+    button {
+      margin-top: 19px;
+      margin-right: 10px;
+      padding: 18px 5px 16px;
+      width: 140px;
+      box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 14px;
+      @include f700;
+      text-transform: uppercase;
+      border: none;
+      text-align: center;
+    }
+    .login__label-name::before {
+      content: "\f007";
+    }
+    .login__label-pass::before {
+      content: "\f023";
+    }
+    .create-account {
+      position: relative;
+      margin-top: 19px;
+      padding: 15px 5px 15px 65px;
+      width: 245px;
+      font-size: 18px;
+      border: none;
+      color: #ffffff;
+      background-color: #76ae36;
+      &::before {
+        content: "\f044";
+        position: absolute;
+        font-family: "icomoon";
+        color: #ffffff;
+        top: 15px;
+        left: 35px;
+        font-size: 18px;
+        width: 18px;
+        height: 16px;
+      }
+    }
+    .lost-passw {
+      display: block;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+}
 // end header
 
 // start Search
@@ -1259,4 +1361,6 @@
 // ================product-page START===========
 // ================product-page END===========
 @import "product-one";
+@import "page-404";
+@import "about";
 @import "media";
