@@ -1,5 +1,14 @@
 .settings {
   padding-bottom: 100px;
+  .submit__btn {
+    width: 108px;
+    background-color: #8bc34a;
+    color: #ffffff;
+    @include f500;
+    padding: 16px 30px;
+    border: none;
+    margin-left: 258px;
+  }
 }
 .product-one__tabs.settings__tabs {
   display: flex;
@@ -88,17 +97,5 @@
     border: 1px solid #dedede;
     color: #707070;
     padding: 0 10px;
-  }
-}
-form {
-  a,
-  button {
-    width: 108px;
-    background-color: #8bc34a;
-    color: #ffffff;
-    @include f500;
-    padding: 16px 30px;
-    border: none;
-    margin-left: 258px;
   }
 }

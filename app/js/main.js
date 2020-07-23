@@ -55,5 +55,7 @@ $(function () {
       .fadeIn();
     return false;
   });
+  $("input[type='file'], select").styler();
+
   var mixer = mixitup(".products__inner-box");
 });

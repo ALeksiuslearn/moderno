@@ -1,0 +1,204 @@
+.withdrawals {
+  // .withdrawals__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+
+  // .withdrawals__col
+
+  &__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    height: 100%;
+  }
+
+  // .withdrawals__box
+
+  // .withdrawals__title
+
+  &__title {
+    color: #263238;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 24px;
+    @include f500;
+    line-height: 60px;
+    padding: 18px 33px;
+    margin-bottom: 30px;
+  }
+
+  // .withdrawals__content
+
+  &__content {
+    padding: 0 40px 0 35px;
+    .submit__btn {
+      padding: 15px 36px;
+      margin-left: 0;
+      background-color: $green;
+      margin-bottom: 50px;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  .withdrawals {
+    &__content-items {
+      padding-bottom: 35px;
+    }
+
+    // .withdrawals__content-item
+
+    &__content-item {
+      display: flex;
+
+      height: 42px;
+      align-items: center;
+      font-size: 13px;
+      color: #444;
+      &:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+    }
+
+    // .withdrawals__content-date
+
+    &__content-date {
+      width: 154px;
+      @include f500;
+      padding-left: 20px;
+    }
+
+    // .withdrawals__content-email
+
+    &__content-email {
+      width: 180px;
+      @include f500;
+    }
+
+    // .withdrawals__content-price
+
+    &__content-price {
+      width: 70px;
+      @include f700;
+    }
+  }
+  .withdrawals__content-status {
+    width: 88px;
+    @include f700;
+
+    // .withdrawals__content-status--paid
+
+    &--paid {
+      color: $green;
+    }
+  }
+
+  .withdrawal__form-line {
+    margin-bottom: 25px;
+    label {
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      @include f500;
+      margin-bottom: 15px;
+      color: $bg;
+      margin-top: 25px;
+      span {
+        color: $green;
+      }
+    }
+    input,
+    select {
+      width: 100%;
+      display: block;
+      border: 1px solid #d7d7d7;
+      height: 40px;
+      background-color: #f9f9f9;
+      padding: 0 18px;
+      &::placeholder {
+        color: #707070;
+      }
+    }
+    .jq-selectbox {
+      width: 100%;
+    }
+    .jq-file {
+      width: 100%;
+      border-radius: 0px;
+      box-shadow: none;
+      border: 1px solid #d7d7d7;
+      background-color: #f9f9f9;
+      height: 40px;
+    }
+    .jq-selectbox__select {
+      padding: 0 18px;
+      border-radius: 0px;
+      background-color: #f9f9f9;
+      box-shadow: none;
+      font-family: "Roboto-Regular", sans-serif;
+      font-weight: 400;
+      color: #707070;
+      text-shadow: none;
+      line-height: 40px;
+      height: 40px;
+      border: 1px solid #d7d7d7;
+    }
+    .jq-file__name {
+      width: 100%;
+      height: 40px;
+      padding: 0 18px;
+      border: none;
+      border-bottom-color: transparent;
+      border-radius: 0px;
+      background: transparent;
+      box-shadow: none;
+      line-height: 40px;
+      padding-right: 12px;
+      padding: 0 18px;
+      color: #707070;
+      margin-left: 100px;
+      outline: none;
+    }
+    .jq-file__browse {
+      top: 5px;
+      right: auto;
+      left: 9px;
+      padding: 0 12px;
+      border-left: none;
+      font-size: 12px;
+      line-height: 26px;
+      border-radius: 0;
+      background: #fff;
+      box-shadow: none;
+      border: 1px solid #d7d7d7;
+      border-left: 1px solid #d7d7d7;
+      text-shadow: none;
+      color: #444444;
+    }
+    .jq-selectbox__trigger-arrow {
+      border: none;
+      font-size: 15px;
+      line-height: 40px;
+      top: 0;
+      right: 20px;
+      &::before {
+        font-family: "icomoon";
+        content: "\f0d7";
+        /* Style for "" */
+        width: 9px;
+        height: 9px;
+        color: #444444;
+      }
+    }
+    .jq-selectbox__trigger {
+      border-left: none;
+    }
+    .jq-selectbox__dropdown {
+      top: 37px;
+    }
+  }
+}

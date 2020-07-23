@@ -674,6 +674,7 @@
 // =============Start products slider
 .product-slider {
   padding: 110px 0 120px;
+  background-color: #fff;
 
   .slick-dots {
     margin-top: 50px;
@@ -815,6 +816,7 @@
 // ================tutorial START===========
 .tutorial {
   padding: 70px 0 120px;
+  background-color: #fff;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -1367,4 +1369,6 @@
 @import "settings";
 @import "page-404";
 @import "about";
+@import "upload";
+@import "withdrawals";
 @import "media";
