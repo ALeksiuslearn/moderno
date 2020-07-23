@@ -246,7 +246,32 @@ form {
   .icon-heartbeat {
     background-color: #42a5f5;
   }
+  .jq-selectbox__select {
+    box-shadow: none;
+    background: #fff;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    color: #70838d;
+    text-shadow: none;
+    border-radius: 0px;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
 }
+// .jq-selectbox__dropdown {
+//   top: 37px;
+// }
+// .jq-selectbox__select-text {
+//   color: #70838d;
+//   font-size: 13px;
+//   text-overflow: clip;
+//   padding: 8px 27px 8px 10px;
+// }
 .product-author__box {
   padding: 25px 0;
   display: flex;
