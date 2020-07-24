@@ -1,0 +1,23 @@
+// .about__wrapper {
+// значения прописаны в page-404.scss
+// }
+// .about__title-medium {
+// значения прописаны в page-404.scss
+// }
+.about__inner {
+  padding: 0 50px;
+}
+.about__box {
+  &-title {
+    color: #444444;
+    font-size: 20px;
+    @include f700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #707070;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+}

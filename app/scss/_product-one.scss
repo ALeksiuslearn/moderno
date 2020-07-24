@@ -1,0 +1,369 @@
+.product-one {
+  padding-bottom: 100px;
+}
+.product-one__inner {
+  display: flex;
+}
+.product-one__content {
+  margin-right: 31px;
+  max-width: 870px;
+}
+.product-one__images-inner {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 868px;
+  // height: 457px;
+  padding: 16px;
+  margin-bottom: 40px;
+}
+.product-one__images {
+  max-width: 829px;
+  height: 422px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-one__title {
+  color: $bg;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 40px;
+  @include f500;
+  margin: 30px 0 20px 0;
+}
+.product-one__text {
+  color: #707070;
+  font-size: 16px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+.product-one__box {
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.product-one__link {
+  a & + & {
+    margin-left: 20px;
+  }
+}
+.livepreview,
+.screenshots,
+.documentation {
+  padding: 14px 8px;
+  color: $grey;
+  font-size: 16px;
+  @include f500;
+  width: 150px;
+  margin-right: 18px;
+  background-color: #000;
+}
+.livepreview {
+  background-color: $red;
+}
+.screenshots {
+  background-color: #455a64;
+}
+.documentation {
+  background-color: $green;
+}
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin,
+.icon-pinterest-p {
+  width: 54px;
+  height: 50px;
+  background-color: #6370b6;
+  position: relative;
+  &::before {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+}
+.icon-twitter {
+  background-color: #64b5f6;
+}
+.icon-linkedin {
+  background-color: #4f71ce;
+}
+.icon-pinterest-p {
+  background-color: #d32f2f;
+}
+// Аккордеон START
+
+.tabs {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+
+  .tab {
+    width: 100%;
+    color: #70838d;
+    font-family: Roboto;
+    font-size: 16px;
+    @include f500;
+    padding: 20px 0;
+    cursor: pointer;
+    &.active {
+      color: #263238;
+      border-bottom: 3px solid $green;
+    }
+
+    & + .tab {
+      border-left: 1px solid #d7d7d7;
+    }
+  }
+}
+
+.tab-items__list {
+  line-height: 36px;
+  font-size: 16px;
+  color: #707070;
+  column-count: 2;
+  column-gap: 2;
+  li {
+    max-width: 270px;
+    width: 100%;
+  }
+}
+// взял в документашке к этим табам
+.tab-item {
+  display: none;
+  &:first-child {
+    display: block;
+  }
+}
+// конец взятого
+
+.tab__content {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  padding: 30px 30px 50px;
+}
+// Аккордеон END
+.product-one__more {
+  padding-top: 55px;
+}
+.product-one__more-title {
+  color: $bg;
+  font-family: Roboto;
+  font-size: 18px;
+  @include f500;
+  padding: 18px 25px;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  margin-bottom: 28px;
+}
+.product-one__more-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productmini {
+  width: 270px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+  background-color: #ffffff;
+}
+.productmini__images {
+  /* Style for "more1" */
+  width: 100px;
+  height: 90px;
+  background: cover no-repeat center;
+  margin-right: 20px;
+}
+
+.productmini__name {
+  color: $bg;
+  font-size: 14px;
+  @include f500;
+}
+.productmini__theme {
+  color: $green;
+  font-size: 12px;
+}
+.productmini__price {
+  color: $bg;
+  font-size: 18px;
+  @include f700;
+}
+
+//product-one__ASIDE START
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.price__product {
+  color: $red;
+  font-size: 22px;
+  @include f500;
+}
+// form
+form {
+  color: #fff;
+}
+.product__price {
+  .product__price-btn--cart,
+  .product__price-btn--favourites,
+  .product__price-btn--buy {
+    margin-bottom: 7px;
+    display: block;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 17px 5px 15px;
+    width: 100%;
+    font-family: "Roboto-Regular", sans-serif !important;
+    font-weight: 700;
+    background-color: $green;
+    box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+    background-color: #546e7a;
+    cursor: pointer;
+    &::before {
+      padding-right: 8px;
+      font-weight: 400;
+      font-family: "icomoon";
+    }
+  }
+  .icon-shopping-cart {
+    background-color: #8bc34a;
+  }
+  .icon-heartbeat {
+    background-color: #42a5f5;
+  }
+  .jq-selectbox__select {
+    box-shadow: none;
+    background: #fff;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    color: #70838d;
+    text-shadow: none;
+    border-radius: 0px;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+}
+// .jq-selectbox__dropdown {
+//   top: 37px;
+// }
+// .jq-selectbox__select-text {
+//   color: #70838d;
+//   font-size: 13px;
+//   text-overflow: clip;
+//   padding: 8px 27px 8px 10px;
+// }
+.product-author__box {
+  padding: 25px 0;
+  display: flex;
+}
+.product-author__avatar {
+  margin-right: 14px;
+  width: 73px;
+  height: 63px;
+}
+
+.author__info-name {
+  color: $bg;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.author__info-link {
+  color: #707070;
+  font-size: 13px;
+  border: 1px solid #cccccc;
+  padding: 2px 9px 2px;
+}
+.author__awards-list {
+  li {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      right: 0;
+    }
+    & + li {
+      margin-left: 4px;
+    }
+  }
+  .icon-meh-o {
+    width: 34px;
+    height: 37px;
+  }
+  .icon-pagelines {
+    width: 34px;
+    height: 37px;
+  }
+  .icon-flash {
+    width: 34px;
+    height: 37px;
+  }
+  .icon-foursquare {
+    width: 34px;
+    height: 37px;
+  }
+  .icon-yen {
+    width: 34px;
+    height: 37px;
+  }
+}
+
+.aside__item-sales {
+  padding-top: 23px;
+  font-size: 16px;
+  @include f300;
+  color: #707070;
+  span {
+    color: #263238;
+    font-size: 20px;
+    @include f700;
+    padding-right: 13px;
+    &::before {
+      color: #a6b5bb;
+      padding-right: 20px;
+      content: "\f07a";
+      font-family: "icomoon";
+    }
+  }
+}
+.aside__item.sales-number {
+  padding-bottom: 25px;
+}
+
+.information__line {
+  color: #70838d;
+  @include f500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 20px;
+  span {
+    color: $bg;
+    font-weight: 400;
+  }
+}
+//product-one__ASIDE END

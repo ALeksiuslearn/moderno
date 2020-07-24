@@ -1,0 +1,65 @@
+.page-404__wrapper,
+.about__wrapper,
+.contact__wrapper {
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  margin-bottom: 150px;
+}
+.pager-404__title-medium,
+.about__title-medium,
+.contact__title-medium {
+  color: #444444;
+  font-size: 24px;
+  @include f500;
+  padding: 22px 27px;
+}
+
+.page-404__inner {
+  background-color: $green;
+  text-align: center;
+  color: #fff;
+}
+.page-404__404 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 300px;
+  text-transform: uppercase;
+  padding: 70px 0 25px;
+  line-height: 300px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 292px;
+    background-image: url(../images/page-404/man.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+  }
+}
+.page-404__title-big {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+.page-404__text {
+  font-size: 18px;
+  padding-bottom: 50px;
+  max-width: 515px;
+  margin: 0 auto;
+}
+.page-404__link {
+  background-color: #8bc34a;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  padding: 20px 30px 16px;
+  margin-bottom: 100px;
+}
