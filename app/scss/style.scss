@@ -520,11 +520,17 @@
   padding: 100px 0 110px;
   background-color: $grey;
 }
+.products__wrapper,
+.product__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .products__inner-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: -30px;
 }
 
 .products__inner-btn {
@@ -550,12 +556,15 @@
     }
   }
 }
-
+.products .product__item {
+  margin-bottom: 30px;
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
+}
 .product__item {
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
   max-width: 442px;
   width: 100%;
-  margin-bottom: 30px;
 
   &-img {
     min-height: 250px;
@@ -841,12 +850,12 @@
   &-title {
     display: block;
     color: $bg;
+    max-width: 370px;
     font-size: 24px;
-    position: absolute;
     @include f700;
     background-color: #f8f8f8;
     text-align: center;
-    padding: 30px 10px;
+    padding: 30px 5px;
   }
 }
 // ================tutorial END===========
@@ -1193,13 +1202,17 @@
 }
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
   .product__item {
-    max-width: 270px;
+    // width: 270px;
     background-color: #fff;
+    margin-left: 30px;
+    flex-basis: calc(33.3333% - 30px);
   }
+
   .product__item-img {
     min-height: 180px;
   }
@@ -1293,6 +1306,7 @@
   }
   .product__item-list {
     display: none;
+
     .icon-commenting-o,
     .icon-heartbeat {
       font-size: 12px;
@@ -1332,6 +1346,7 @@
   }
   &.list {
     max-width: 100%;
+    flex-basis: 100% !important;
     .product__item-img {
       width: 240px;
       float: left;
